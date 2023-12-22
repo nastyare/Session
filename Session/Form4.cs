@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace Session
 {
@@ -26,13 +27,21 @@ namespace Session
         {
             Random random = new Random();
             dataGridView1.Rows.Clear();
+            string input = randBox.Text;
 
-            for (int i = 0; i < 40; i++)
+            if (int.TryParse(input, out int rowCount) && rowCount > 0)
             {
-                double number;
-                int dec = random.Next(1, 3);
-                number = Math.Round(random.NextDouble() * 201 - 100, dec);
-                dataGridView1.Rows.Add(number);
+                for (int i = 0; i < rowCount; i++)
+                {
+                    double number;
+                    int dec = random.Next(1, 3);
+                    number = Math.Round(random.NextDouble() * 201 - 100, dec);
+                    dataGridView1.Rows.Add(number);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите корректное положительное число в поле количества.");
             }
         }
         private void button1_Click(object sender, EventArgs e)
