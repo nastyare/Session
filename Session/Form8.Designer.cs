@@ -78,28 +78,28 @@
             // calculateToolStripMenuItem
             // 
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
+            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.calculateToolStripMenuItem.Text = "Рассчитать";
             this.calculateToolStripMenuItem.Click += new System.EventHandler(this.calculateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.deleteToolStripMenuItem.Text = "Очистить";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // randomToolStripMenuItem
             // 
             this.randomToolStripMenuItem.Name = "randomToolStripMenuItem";
-            this.randomToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
+            this.randomToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.randomToolStripMenuItem.Text = "Сгенерировать";
             this.randomToolStripMenuItem.Click += new System.EventHandler(this.randomToolStripMenuItem_Click);
             // 
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.importToolStripMenuItem.Text = "импорт из Excel";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
@@ -134,7 +134,7 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(406, 120);
+            this.chart1.Location = new System.Drawing.Point(392, 34);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             series1.BorderWidth = 2;
@@ -171,7 +171,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(389, 34);
+            this.label1.Location = new System.Drawing.Point(400, 540);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
